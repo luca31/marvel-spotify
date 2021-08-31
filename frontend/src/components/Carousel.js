@@ -6,12 +6,14 @@ function Carousel(props) {
         <span>{character.name}</span>
       </div>
     )
-  })
+  });
 
   return(
     <>
       <h2>Lista personaggi</h2>
-      {characterList}
+      <div className={'carousel'}>
+        {characterList}
+      </div>
     </>
   );
 } 
