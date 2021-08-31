@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.carousel-element {
+  position: relative;
+  display: inline-block;
+  border-radius: 4px;
+  width: 180px;
+  height: 180px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.carousel-element img {
+  position: relative;
+  border-radius: 4px;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.carousel-element span {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255 255 255 / 70%);
+  padding: 10px;
+  width: -webkit-fill-available;
+  border-radius: 0 0 4px 4px;
+}

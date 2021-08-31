@@ -1,15 +1,19 @@
 function Carousel(props) {
   const characterList = props.playlists.map((character, index) => {
     return(
-      <div key = {index} onClick = {() => props.changePlaylist(index)}>{character.name}</div>
+      <div className={'carousel-element'} key={'carousel_' + index} onClick={() => props.changePlaylist(index)}>
+        <img src={character.img} alt={character.name}></img>
+        <span>{character.name}</span>
+      </div>
     )
   })
 
   return(
     <>
-      <h1>Lista personaggi</h1>
+      <h2>Lista personaggi</h2>
       {characterList}
     </>
   );
 } 
+
 export default Carousel;

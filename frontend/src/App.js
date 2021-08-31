@@ -1,8 +1,9 @@
-import Home from './pages/Home'
+import Home from './pages/Home';
+
 const playlists = [
   {
-    name: 'prova',
-    img: '',
+    name: 'personaggio 1',
+    img: 'https://images.pexels.com/photos/5007442/pexels-photo-5007442.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
     songs: [
       {
         title: 'song1',
@@ -12,12 +13,11 @@ const playlists = [
         title: 'song2',
         author: 'author2'
       }
-      
     ]
   },
   {
-    name: 'prova2',
-    img: '',
+    name: 'personaggio 2',
+    img: 'https://wallpapercave.com/wp/wp8269648.jpg',
     songs: [
       {
         title: 'song3',
@@ -27,10 +27,8 @@ const playlists = [
         title: 'song4',
         author: 'author4'
       }
-      
     ]
   }
-
 ]
 
 function App() {
