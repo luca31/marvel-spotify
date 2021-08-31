@@ -12,6 +12,8 @@ code {
     monospace;
 }
 
+/* Carousel */
+
 .carousel-element {
   position: relative;
   display: inline-block;
@@ -39,4 +41,10 @@ code {
   padding: 10px;
   width: -webkit-fill-available;
   border-radius: 0 0 4px 4px;
+}
+
+/* Playlist */
+
+.playlist-element .song-title, .playlist-element .song-author {
+  display: block
 }
