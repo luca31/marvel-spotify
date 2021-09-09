@@ -1,3 +1,6 @@
+import React from 'react';
+
+import PlayingBar from './components/PlayingBar';
 import Home from './pages/Home';
 
 const playlists = [
@@ -60,10 +63,18 @@ const playlists = [
 ]
 
 function App() {
+  const [ currentSong, setCurrentSong ] = React.useState({
+    title: 'song1',
+    author: 'author1'
+  });
+
   return (
-    <div id={'main'}>
-      <Home playlists = {playlists}></Home>
-    </div>
+    <>
+      <div id={'main'}>
+        <Home playlists={playlists}></Home>
+      </div>
+      <PlayingBar currentSong={currentSong}></PlayingBar>
+    </>
   );
 }
 
