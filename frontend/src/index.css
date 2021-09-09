@@ -87,6 +87,35 @@ b {
 
 /* Playlist */
 
+.playlist-element {
+  width: 100%;
+  display: block;
+  border-style: solid;
+  border-width: 1px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-color: grey;
+}
+
+.playlist-element img {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+
+}
+
+.playlist-element .song-content {
+  display: inline-block
+}
+
 .playlist-element .song-title, .playlist-element .song-author {
   display: block
 }
+
+/*.playlist-element .song-title {
+
+}*/
+
+
+
