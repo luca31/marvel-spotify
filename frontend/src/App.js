@@ -63,17 +63,14 @@ const playlists = [
 ]
 
 function App() {
-  const [ currentSong, setCurrentSong ] = React.useState({
-    title: 'song1',
-    author: 'author1'
-  });
+  const [ currentSong, setCurrentSong ] = React.useState(playlists[0].songs[0]);
 
   return (
     <>
       <div id={'main'}>
-        <Home playlists={playlists}></Home>
+        <Home playlists={playlists} setCurrentSong={setCurrentSong}></Home>
       </div>
-      <PlayingBar currentSong={currentSong}></PlayingBar>
+      <PlayingBar currentSong={currentSong} isPlaying={true}></PlayingBar>
     </>
   );
 }

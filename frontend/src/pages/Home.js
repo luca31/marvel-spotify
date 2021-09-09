@@ -11,8 +11,8 @@ function Home(props) {
   return(
     <>
       <h1>Marvel Spotify</h1>
-      <Carousel playlists = {props.playlists} changePlaylist = {(index) => changePlaylist(index)}></Carousel>
-      <Playlist songs = {currentPlaylist}></Playlist>
+      <Carousel playlists={props.playlists} changePlaylist={(index) => changePlaylist(index)}></Carousel>
+      <Playlist songs={currentPlaylist} setCurrentSong={props.setCurrentSong}></Playlist>
     </>
   );
 }
