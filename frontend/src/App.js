@@ -8,10 +8,11 @@ import Home from './pages/Home';
 import playlists from './playlists.json';
 
 function App() {
+  const [ currentPlaylist, setCurrentPlaylist ] = React.useState(playlists[0]);
   const [ currentSong, setCurrentSong ] = React.useState(playlists[0].songs[0]);
   const [ isPlaying, setIsPlaying ] = React.useState(false);
 
-  const [play, { stop, pause, duration }] = useSound( './tracks/' + currentSong.track + '-128k.mp3' );
+  const [play, { stop, pause, duration }] = useSound( '/tracks/' + currentSong.track + '-128k.mp3' );
 
   const changeSong = song => {
     setIsPlaying(false);
@@ -21,20 +22,20 @@ function App() {
 
   const switchMusicPlay = () => {
     if(isPlaying) {
-      setIsPlaying(false)
-      pause()
+      setIsPlaying(false);
+      pause();
     } else {
-      setIsPlaying(true)
-      play()
+      setIsPlaying(true);
+      play();
     }
   }
 
   return (
     <>
       <div id={'main'}>
-        <Home playlists={playlists} setCurrentSong={changeSong}></Home>
+        <Home playlists={playlists} setCurrentSong={changeSong} currentPlaylist={currentPlaylist} setCurrentPlaylist={setCurrentPlaylist}></Home>
       </div>
-      <PlayingBar currentSong={currentSong} isPlaying={isPlaying} switchMusicPlay={switchMusicPlay} duration={duration}></PlayingBar>
+      <PlayingBar currentSong={currentSong} isPlaying={isPlaying} switchMusicPlay={switchMusicPlay} duration={duration} currentPlaylist={currentPlaylist} setCurrentSong={changeSong}></PlayingBar>
     </>
   );
 }

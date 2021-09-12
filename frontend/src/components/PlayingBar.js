@@ -12,15 +12,33 @@ function PlayingBar(props) {
   const [ duration, setDuration ] = React.useState();
 
   React.useEffect(() => {
-    setDuration(props.duration)
-  }, [props.duration] )
+    setDuration(props.duration);
+  }, [props.duration] );
+
+  const skipPrevious = () => {
+    const currentIndex = props.currentPlaylist.songs.findIndex(e => e === props.currentSong);
+    if(currentIndex > 0) {
+      props.setCurrentSong(props.currentPlaylist.songs[currentIndex - 1]);
+    } else {
+      props.setCurrentSong(props.currentPlaylist.songs[props.currentPlaylist.songs.length - 1]);
+    }
+  }
+
+  const skipNext = () => {
+    const currentIndex = props.currentPlaylist.songs.findIndex(e => e === props.currentSong);
+    if(currentIndex < props.currentPlaylist.songs.length - 1) {
+      props.setCurrentSong(props.currentPlaylist.songs[currentIndex + 1]);
+    } else {
+      props.setCurrentSong(props.currentPlaylist.songs[0]);
+    }
+  }
 
   return(
     <div className={'playing-bar'}>
       <div className={'playing-bar-content-start'}>
-        <img src={'./icons/skip_previous_white_24dp.svg'} alt='skip-previous' />
-        { props.isPlaying ? <img onClick={props.switchMusicPlay} src={'./icons/pause_white_24dp.svg'} alt='pause' /> : <img onClick={props.switchMusicPlay} src={'./icons/play_arrow_white_24dp.svg'} alt='play' />}
-        <img src={'./icons/skip_next_white_24dp.svg'} alt='skip-next' />
+        <img onClick={skipPrevious} src={'/icons/skip_previous_white_24dp.svg'} alt='skip-previous' />
+        { props.isPlaying ? <img onClick={props.switchMusicPlay} src={'/icons/pause_white_24dp.svg'} alt='pause' /> : <img onClick={props.switchMusicPlay} src={'/icons/play_arrow_white_24dp.svg'} alt='play' />}
+        <img onClick={skipNext} src={'/icons/skip_next_white_24dp.svg'} alt='skip-next' />
       </div>
       <div className={'playing-bar-content'}>
         <span>{props.currentSong.title}</span>
