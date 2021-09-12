@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Tony Stark",
+    "img": "tony_stark.jpg",
+    "songs": [
+      {
+        "title": "Shoot to Thrill",
+        "author": "AC/DC",
+        "track": "shoot_to_thrill",
+        "img": "shoot_to_thrill.jpg"
+      },
+      {
+        "title": "Cherry Pie",
+        "author": "Warrant",
+        "track": "cherry_pie",
+        "img": "cherry_pie.jpg"
+      },
+      {
+        "title": "Should I Stay or Should I Go",
+        "author": "The Clash",
+        "track": "should_i_stay_or_should_i_go",
+        "img": "should_i_stay_or_should_i_go.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Natasha Romanoff",
+    "img": "natasha_romanoff.jpg",
+    "songs": [
+      {
+        "title": "Killer Queen",
+        "author": "Queen",
+        "track": "killer_queen",
+        "img": "killer_queen.jpg"
+      },
+      {
+        "title": "Bubblegum Bitch",
+        "author": "Marina",
+        "track": "bubblegum_bitch",
+        "img": "bubblegum_bitch.jpg"
+      },
+      {
+        "title": "Black Widow",
+        "author": "Iggy Azalea",
+        "track": "black_widow",
+        "img": "black_widow.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Steve Rogers",
+    "img": "steve_rogers.jpg",
+    "songs": [
+      {
+        "title": "Whatever It Takes",
+        "author": "Imagine Dragons",
+        "track": "whatever_it_takes",
+        "img": "whatever_it_takes.jpg"
+      },
+      {
+        "title": "Immortals",
+        "author": "Fall Out Boy",
+        "track": "immortals",
+        "img": "immortals.jpg"
+      },
+      {
+        "title": "Man on a Mission",
+        "author": "Oh The Larceny",
+        "track": "man_on_a_mission",
+        "img": "man_on_a_mission.png"
+      }
+    ]
+  }
+]
