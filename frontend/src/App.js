@@ -37,7 +37,7 @@ function App() {
 
   return (
     <>
-      <NavBar></NavBar>
+      <NavBar changePage={changePage}></NavBar>
       <div id={'main'}>
         { page === 'home' ? <Home playlists={playlists} setCurrentSong={changeSong} currentPlaylist={currentPlaylist} setCurrentPlaylist={setCurrentPlaylist}></Home> : null }
         { page === 'history' ? <History history={history} setHistory={setHistory} setCurrentSong={changeSong} /> : null }
