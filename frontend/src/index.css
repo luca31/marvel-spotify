@@ -41,8 +41,9 @@ b {
 
 #main {
   padding: 25px 10px;
+  padding-top: 51px;
   height: calc(100% - 101px);
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 /* Carousel */
@@ -186,6 +187,31 @@ b {
   align-items: flex-end;
 }
 
+/* Nav Bar */
+
+.nav-bar {
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 0 10px;
+  height: 51px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  justify-content: space-between;
+  align-content: flex-end;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+
+
+
+
+
+}
+
+
 /* Big screen */
 
 .hide-on-mobile {
@@ -195,9 +221,10 @@ b {
 @media screen and (min-width: 800px) {
   #main {
     padding: 25px 60px;
+    padding-top: 51px;
   }
 
-  .playing-bar {
+  .playing-bar, .nav-bar {
     padding: 0 60px;
   }
 
