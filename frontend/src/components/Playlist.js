@@ -1,7 +1,7 @@
 function Playlist(props) {
   if(!props.currentPlaylist) return null;
 
-  const songsList = props.currentPlaylist.songs.map((song, index) => (
+  const songsList = props.currentPlaylist.map((song, index) => (
     <div onClick={() => props.setCurrentSong(song)} key={index} className={'playlist-element'}>
       <img src={'/images/' + (song.img ? song.img : 'black_placeholder.jpg')} alt={'song icon'} className={'song-icon'}></img>
       <div className={'song-content'}>
@@ -13,7 +13,7 @@ function Playlist(props) {
 
   return(
     <>
-      <h2>{props.currentPlaylist?.name}</h2>
+      { props.name ? <h2>{props.name}</h2> : null }
       {songsList}
     </>
   );

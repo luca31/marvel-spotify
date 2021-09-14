@@ -11,7 +11,7 @@ function Home(props) {
     <>
       <h1>Marvel Spotify</h1>
       <Carousel playlists={props.playlists} changePlaylist={changePlaylist}></Carousel>
-      <Playlist currentPlaylist={props.currentPlaylist} setCurrentSong={props.setCurrentSong}></Playlist>
+      <Playlist currentPlaylist={props.currentPlaylist.songs} name={props.currentPlaylist.name} setCurrentSong={props.setCurrentSong}></Playlist>
     </>
   );
 }
