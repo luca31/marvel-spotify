@@ -9,7 +9,6 @@ function Home(props) {
 
   return(
     <>
-      <h1>Marvel Spotify</h1>
       <Carousel playlists={props.playlists} changePlaylist={changePlaylist}></Carousel>
       <Playlist currentPlaylist={props.currentPlaylist} setCurrentSong={props.setCurrentSong}></Playlist>
     </>

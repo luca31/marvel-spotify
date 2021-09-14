@@ -1,11 +1,12 @@
 import React from 'react';
 
 import useSound from 'use-sound';
-
+import NavBar from './components/NavBar';
 import PlayingBar from './components/PlayingBar';
 import Home from './pages/Home';
 
 import playlists from './playlists.json';
+
 
 function App() {
   const [ currentPlaylist, setCurrentPlaylist ] = React.useState(playlists[0]);
@@ -32,6 +33,7 @@ function App() {
 
   return (
     <>
+      <NavBar></NavBar>
       <div id={'main'}>
         <Home playlists={playlists} setCurrentSong={changeSong} currentPlaylist={currentPlaylist} setCurrentPlaylist={setCurrentPlaylist}></Home>
       </div>
