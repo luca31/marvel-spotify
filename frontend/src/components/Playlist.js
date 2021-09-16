@@ -1,3 +1,5 @@
+import formatTime from "../utilities/formatTime";
+
 function Playlist(props) {
   if(!props.currentPlaylist) return null;
 
@@ -7,6 +9,9 @@ function Playlist(props) {
       <div className={'song-content'}>
         <span className={'song-title'}>{song.title}</span>
         <span className={'song-author'}>{song.author}</span>
+      </div>
+      <div className={'song-content-end'}>
+        <span>{formatTime(song.duration)}</span>
       </div>
     </div>
   ));

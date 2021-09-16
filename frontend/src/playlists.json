@@ -7,19 +7,22 @@
         "title": "Shoot to Thrill",
         "author": "AC/DC",
         "track": "shoot_to_thrill",
-        "img": "shoot_to_thrill.jpg"
+        "img": "shoot_to_thrill.jpg",
+        "duration": 317472
       },
       {
         "title": "Cherry Pie",
         "author": "Warrant",
         "track": "cherry_pie",
-        "img": "cherry_pie.jpg"
+        "img": "cherry_pie.jpg",
+        "duration": 201144
       },
       {
         "title": "Should I Stay or Should I Go",
         "author": "The Clash",
         "track": "should_i_stay_or_should_i_go",
-        "img": "should_i_stay_or_should_i_go.jpg"
+        "img": "should_i_stay_or_should_i_go.jpg",
+        "duration": 189504
       }
     ]
   },
@@ -31,19 +34,22 @@
         "title": "Killer Queen",
         "author": "Queen",
         "track": "killer_queen",
-        "img": "killer_queen.jpg"
+        "img": "killer_queen.jpg",
+        "duration": 179400
       },
       {
         "title": "Bubblegum Bitch",
         "author": "Marina",
         "track": "bubblegum_bitch",
-        "img": "bubblegum_bitch.jpg"
+        "img": "bubblegum_bitch.jpg",
+        "duration": 154704
       },
       {
         "title": "Black Widow",
         "author": "Iggy Azalea",
         "track": "black_widow",
-        "img": "black_widow.jpg"
+        "img": "black_widow.jpg",
+        "duration": 209664
       }
     ]
   },
@@ -55,19 +61,22 @@
         "title": "Whatever It Takes",
         "author": "Imagine Dragons",
         "track": "whatever_it_takes",
-        "img": "whatever_it_takes.jpg"
+        "img": "whatever_it_takes.jpg",
+        "duration": 202032
       },
       {
         "title": "Immortals",
         "author": "Fall Out Boy",
         "track": "immortals",
-        "img": "immortals.jpg"
+        "img": "immortals.jpg",
+        "duration": 195072
       },
       {
         "title": "Man on a Mission",
         "author": "Oh The Larceny",
         "track": "man_on_a_mission",
-        "img": "man_on_a_mission.png"
+        "img": "man_on_a_mission.png",
+        "duration": 211992
       }
     ]
   }

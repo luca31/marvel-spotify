@@ -112,32 +112,35 @@ b {
   border-radius: 8px;
   margin-right: 10px;
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   object-fit: cover;
 
 }
 
-
-
-.playlist-element .song-content {
+.playlist-element .song-content, .playlist-element .song-content {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
 }
 
+.playlist-element .song-content-end {
+  margin-left: auto;
+  color: #616161;
+}
+
 .playlist-element .song-title, .playlist-element .song-author {
-  display: block
+  display: block;
 }
 
 .playlist-element .song-title {
-  font-size: 19px
+  font-size: 19px;
 }
 
 .playlist-element .song-author {
-  font-size: 15px;
-  color: #616161
+  font-size: 16px;
+  color: #616161;
 }
 
 /* Playing Bar */
@@ -236,5 +239,9 @@ b {
 
   .hide-on-mobile {
     display: block;
+  }
+
+  .hide-on-desktop {
+    display: none;
   }
 }

@@ -2,19 +2,12 @@ import React from "react";
 
 import Sound from 'react-sound';
 
+import formatTime from '../utilities/formatTime';
 
-const formatTime = (ms) => {
-  const minutes = Math.floor(ms / 60000);
-  const seconds = ((ms % 60000) / 1000).toFixed(0);
-  return parseInt(seconds) === 60 ?
-    (minutes+1) + ":00" :
-    minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
-}
 
 function PlayingBar(props) {
   const [ playingStatus, setPlayingStatus ] = React.useState(Sound.status.STOPPED);
   const [ isPlaying, setIsPlaying ] = React.useState();
-  const [ duration, setDuration ] = React.useState(0);
   const [ position, setPosition ] = React.useState(0);
 
   const switchMusicPlay = () => {
@@ -31,7 +24,6 @@ function PlayingBar(props) {
 
   React.useEffect(() => {
     setPosition(0);
-    setDuration(0)
   }, [ props.currentSong ])
 
   const skipPrevious = () => {
@@ -72,15 +64,13 @@ function PlayingBar(props) {
           <span>{props.currentSong.author}</span>
         </div>
         <div className={'playing-bar-content-end'}>
-          <span>{formatTime(position)}</span>
-          <span className={'hide-on-mobile'}>&nbsp;/&nbsp;</span>
-          <span className={'hide-on-mobile'}>{formatTime(duration)}</span>
+          <span className={'hide-on-desktop'}>- {formatTime(props.currentSong.duration - position)}</span>
+          <span className={'hide-on-mobile'}>{formatTime(position)} / {formatTime(props.currentSong.duration)}</span>
         </div>
       </div>
       <Sound
         url={'/tracks/' + props.currentSong.track + '-128k.mp3'}
         playStatus={playingStatus}
-        onLoading={({duration}) => setDuration(duration)}
         onPlaying={({position}) => setPosition(position)}
         onFinishedPlaying={skipNext}
       />
