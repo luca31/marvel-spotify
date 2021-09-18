@@ -9,8 +9,12 @@ function Home(props) {
 
   return(
     <>
-      <Carousel playlists={props.playlists} changePlaylist={changePlaylist}></Carousel>
-      <Playlist currentPlaylist={props.currentPlaylist.songs} name={props.currentPlaylist.name} setCurrentSong={props.setCurrentSong}></Playlist>
+      <section>
+        <Carousel playlists={props.playlists} currentPlaylist={props.currentPlaylist} changePlaylist={changePlaylist}></Carousel>
+      </section>
+      <section>
+        <Playlist currentPlaylist={props.currentPlaylist.songs} name={props.currentPlaylist.name} setCurrentSong={props.setCurrentSong} currentSong={props.currentSong}></Playlist>
+      </section>
     </>
   );
 }

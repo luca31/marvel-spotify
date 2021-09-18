@@ -16,15 +16,15 @@ function App() {
 
   const changeSong = song => {
     setCurrentSong(song);
-    if(!history.includes(song)) setHistory(history.concat(song));
+    setHistory([song].concat([...history].filter(e => e !== song)));
   }
 
   return (
     <>
       <NavBar changePage={changePage}></NavBar>
       <div id={'main'}>
-        { page === 'home' ? <Home playlists={playlists} setCurrentSong={changeSong} currentPlaylist={currentPlaylist} setCurrentPlaylist={setCurrentPlaylist}></Home> : null }
-        { page === 'history' ? <History history={history} setHistory={setHistory} setCurrentSong={changeSong} /> : null }
+        { page === 'home' ? <Home playlists={playlists} currentSong={currentSong} setCurrentSong={changeSong} currentPlaylist={currentPlaylist} setCurrentPlaylist={setCurrentPlaylist}></Home> : null }
+        { page === 'history' ? <History history={history} setHistory={setHistory} currentSong={currentSong} setCurrentSong={changeSong} /> : null }
       </div>
       <PlayingBar currentSong={currentSong} currentPlaylist={currentPlaylist} setCurrentSong={changeSong}></PlayingBar>
     </>
