@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/marvel-spotify/static/css/main.e2372b25.chunk.css",
-    "main.js": "/marvel-spotify/static/js/main.366c9aeb.chunk.js",
-    "main.js.map": "/marvel-spotify/static/js/main.366c9aeb.chunk.js.map",
+    "main.js": "/marvel-spotify/static/js/main.9b270e7a.chunk.js",
+    "main.js.map": "/marvel-spotify/static/js/main.9b270e7a.chunk.js.map",
     "runtime-main.js": "/marvel-spotify/static/js/runtime-main.33c16914.js",
     "runtime-main.js.map": "/marvel-spotify/static/js/runtime-main.33c16914.js.map",
     "static/js/2.a19a2190.chunk.js": "/marvel-spotify/static/js/2.a19a2190.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.33c16914.js",
     "static/js/2.a19a2190.chunk.js",
     "static/css/main.e2372b25.chunk.css",
-    "static/js/main.366c9aeb.chunk.js"
+    "static/js/main.9b270e7a.chunk.js"
   ]
 }
