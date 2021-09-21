@@ -50,13 +50,13 @@ function PlayingBar(props) {
     <>
       <div className={'playing-bar'}>
         <div className={'playing-bar-content-start'}>
-          <img onClick={skipPrevious} src={'/icons/skip_previous_white_24dp.svg'} alt='skip-previous' />
+          <img onClick={skipPrevious} src={'./icons/skip_previous_white_24dp.svg'} alt='skip-previous' />
           { isPlaying ?
-            <img onClick={switchMusicPlay} src={'/icons/pause_white_24dp.svg'} alt='pause' />
+            <img onClick={switchMusicPlay} src={'./icons/pause_white_24dp.svg'} alt='pause' />
             :
-            <img onClick={switchMusicPlay} src={'/icons/play_arrow_white_24dp.svg'} alt='play' />
+            <img onClick={switchMusicPlay} src={'./icons/play_arrow_white_24dp.svg'} alt='play' />
           }
-          <img onClick={skipNext} src={'/icons/skip_next_white_24dp.svg'} alt='skip-next' />
+          <img onClick={skipNext} src={'./icons/skip_next_white_24dp.svg'} alt='skip-next' />
         </div>
         <div className={'playing-bar-content'}>
           <span>{props.currentSong.title}</span>
@@ -69,7 +69,7 @@ function PlayingBar(props) {
         </div>
       </div>
       <Sound
-        url={'/tracks/' + props.currentSong.track + '-128k.mp3'}
+        url={'./tracks/' + props.currentSong.track + '-128k.mp3'}
         playStatus={playingStatus}
         onPlaying={({position}) => setPosition(position)}
         onFinishedPlaying={skipNext}
