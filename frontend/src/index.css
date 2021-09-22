@@ -174,7 +174,6 @@ b {
 
 .playing-bar {
   display: flex;
-  background-color: black;
   color: white;
   padding: 0 15px;
   height: 51px;
@@ -211,7 +210,8 @@ b {
   white-space: nowrap;
   overflow: hidden;
   flex-wrap: nowrap;
-  padding: 0 10px;
+  padding: 0 20px;
+  width: 100%;
 }
 
 .playing-bar .playing-bar-content > span {
@@ -235,7 +235,6 @@ b {
 
 .nav-bar {
   display: flex;
-  background-color: black;
   color: white;
   padding: 0 15px;
   height: 51px;
@@ -243,9 +242,9 @@ b {
   left: 0;
   top: 0;
   right: 0;
-  justify-content: space-between;
-  align-content: flex-end;
-  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   user-select: none;
@@ -256,6 +255,36 @@ b {
   -webkit-tap-highlight-color: transparent;
 }
 
+.nav-bar span:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* Colour settings */
+
+.colour-settings .colour {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.colour-settings .colour:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.colour-settings .colour .colour-demo {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-right: 15px;
+}
+
 /* Utilities */
 
 section {
@@ -264,7 +293,42 @@ section {
 
 .selected {
   box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+}
+
+.selected:not(.colour-demo) {
   border-radius: 8px;
+}
+
+.black {
+  background-color: #000000;
+}
+
+.blue {
+  background-color: #0d47a1;
+}
+
+.red {
+  background-color: #e53935;
+}
+
+.green {
+  background-color: #2e7d32;
+}
+
+.text-black {
+  color: #000000;
+}
+
+.text-blue {
+  color: #0d47a1;
+}
+
+.text-red {
+  color: #e53935;
+}
+
+.text-green {
+  color: #2e7d32;
 }
 
 /* Big screen */
@@ -291,6 +355,7 @@ section {
 
   .playing-bar .playing-bar-content {
     flex-direction: row;
+    width: unset;
   }
 
   .playing-bar .playing-bar-content-end {
@@ -299,5 +364,9 @@ section {
 
   .hide-on-desktop {
     display: none!important;
+  }
+
+  .nav-bar span:not(:last-child) {
+    margin-right: 40px;
   }
 }

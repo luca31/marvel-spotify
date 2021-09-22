@@ -48,7 +48,7 @@ function PlayingBar(props) {
 
   return(
     <>
-      <div className={'playing-bar'}>
+      <div className={'playing-bar ' + props.theme}>
         <div className={'playing-bar-content-start'}>
           <img onClick={skipPrevious} src={'./icons/skip_previous_white_24dp.svg'} alt='skip-previous' />
           { isPlaying ?

@@ -9,7 +9,7 @@ function Home(props) {
 
   return(
     <section>
-      <h1>
+      <h1 className={'text-'+props.theme}>
         Cronologia
         <img src={'./icons/delete_black_24dp.svg'} onClick={clearHistory} alt={'clear history'} />
       </h1>

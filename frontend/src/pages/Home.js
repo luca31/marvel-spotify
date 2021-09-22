@@ -10,6 +10,7 @@ function Home(props) {
   return(
     <>
       <section>
+        <h1 className={'text-'+props.theme}>Marvel Spotify</h1>
         <Carousel playlists={props.playlists} currentPlaylist={props.currentPlaylist} changePlaylist={changePlaylist}></Carousel>
       </section>
       <section>
