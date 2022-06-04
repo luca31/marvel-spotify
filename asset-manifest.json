@@ -1,22 +1,15 @@
 {
   "files": {
-    "main.css": "/marvel-spotify/static/css/main.26f43649.chunk.css",
-    "main.js": "/marvel-spotify/static/js/main.c39a3f3e.chunk.js",
-    "main.js.map": "/marvel-spotify/static/js/main.c39a3f3e.chunk.js.map",
-    "runtime-main.js": "/marvel-spotify/static/js/runtime-main.33c16914.js",
-    "runtime-main.js.map": "/marvel-spotify/static/js/runtime-main.33c16914.js.map",
-    "static/js/2.a19a2190.chunk.js": "/marvel-spotify/static/js/2.a19a2190.chunk.js",
-    "static/js/2.a19a2190.chunk.js.map": "/marvel-spotify/static/js/2.a19a2190.chunk.js.map",
-    "static/js/3.84c7977b.chunk.js": "/marvel-spotify/static/js/3.84c7977b.chunk.js",
-    "static/js/3.84c7977b.chunk.js.map": "/marvel-spotify/static/js/3.84c7977b.chunk.js.map",
+    "main.css": "/marvel-spotify/static/css/main.90727e0c.css",
+    "main.js": "/marvel-spotify/static/js/main.45f1f37e.js",
+    "static/js/787.cda612ba.chunk.js": "/marvel-spotify/static/js/787.cda612ba.chunk.js",
     "index.html": "/marvel-spotify/index.html",
-    "static/css/main.26f43649.chunk.css.map": "/marvel-spotify/static/css/main.26f43649.chunk.css.map",
-    "static/js/2.a19a2190.chunk.js.LICENSE.txt": "/marvel-spotify/static/js/2.a19a2190.chunk.js.LICENSE.txt"
+    "main.90727e0c.css.map": "/marvel-spotify/static/css/main.90727e0c.css.map",
+    "main.45f1f37e.js.map": "/marvel-spotify/static/js/main.45f1f37e.js.map",
+    "787.cda612ba.chunk.js.map": "/marvel-spotify/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.33c16914.js",
-    "static/js/2.a19a2190.chunk.js",
-    "static/css/main.26f43649.chunk.css",
-    "static/js/main.c39a3f3e.chunk.js"
+    "static/css/main.90727e0c.css",
+    "static/js/main.45f1f37e.js"
   ]
 }
